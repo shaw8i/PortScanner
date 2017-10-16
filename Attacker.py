@@ -10,6 +10,7 @@ print('''Options:
           5- exit
           
           -options
+          -help
     ''')
 
 while True:
@@ -32,7 +33,7 @@ while True:
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             if sock.connect_ex((target, port)) == 0:
-                print("\n[+] Port %i is opened\n" % port)
+                print("\n[+] Port %i is open\n" % port)
             else:
                 print("\n[+] Port %i is closed\n" % port)
         except socket.error as e:
@@ -50,7 +51,7 @@ while True:
             try:
                 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 if sock.connect_ex((target, port)) == 0:
-                    print("[+] Port %i is opened" % port)
+                    print("[+] Port %i is open" % port)
                 else:
                     print("[+] Port %i is closed" % port)
             except socket.error as e:
@@ -68,7 +69,7 @@ while True:
             try:
                 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 if sock.connect_ex((target, port)) == 0:
-                    print("[+] Port %i is opened" % port)
+                    print("[+] Port %i is open" % port)
                 else:
                     print("[+] Port %i is closed" % port)
             except socket.error as e:
