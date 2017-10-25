@@ -35,7 +35,7 @@ while True:
             if sock.connect_ex((target, port)) == 0:
                 print("\n[+] Port %i is open\n" % port)
             else:
-                print("\n[+] Port %i is closed\n" % port)
+                print("\n[-] Port %i is closed\n" % port)
         except socket.error as e:
             print(e)
 
@@ -53,7 +53,7 @@ while True:
                 if sock.connect_ex((target, port)) == 0:
                     print("[+] Port %i is open" % port)
                 else:
-                    print("[+] Port %i is closed" % port)
+                    print("[-] Port %i is closed" % port)
             except socket.error as e:
                 print(e)
         print('\n')
@@ -71,7 +71,7 @@ while True:
                 if sock.connect_ex((target, port)) == 0:
                     print("[+] Port %i is open" % port)
                 else:
-                    print("[+] Port %i is closed" % port)
+                    print("[-] Port %i is closed" % port)
             except socket.error as e:
                 print(e)
         print('\n')
