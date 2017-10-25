@@ -83,14 +83,15 @@ while True:
 
     elif choice.lower() == 'options':
         print('''Options:
-                  1- Enter a Port number
-                  2- Enter a range of Ports numbers
-                  3- change target
-                  4- exit
-
-                  -options
-                  -help
-            ''')
+          1- Enter a single Port number
+          2- Enter a range of Port numbers
+          3- Enter specific Ports
+          4- change target
+          5- exit
+          
+          -options
+          -help
+    ''')
     elif choice.lower() == 'help':
         print('''Note: 
                 2- for scanning range of ports write startingPort-finishingPort 
